@@ -1,0 +1,63 @@
+<!-- Sample Assessment for Introduction to Programming -->
+
+<!DOCTYPE html>
+<html>
+  <!-- CSS STYLE -->
+  <head>
+    <title>My Website</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      h1,
+      h2,
+      h3 {
+        padding: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <h1>Welcome to...</h1>
+    <p>This is a paragraph...</p>
+    <img src="jas.jpg" alt="Description of the image" />
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <ol>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+    <p>
+      This is a <a href="https://github.com/TabinJasper-BSIT32E1">link</a> to an
+      external website.
+    </p>
+    <h3 style="color: red">Heading 3</h3>
+    <button onclick="checkNumber()">Check Number</button>
+    <p id="result"></p>
+
+    <!-- JAVA SCRIPT PART -->
+    <script>
+      function checkNumber() {
+        var number = parseInt(prompt("Enter a number:"));
+        if (isNaN(number)) {
+          document.getElementById("result").textContent =
+            "Please enter a valid number.";
+        } else {
+          if (number % 2 === 0) {
+            document.getElementById("result").textContent =
+              number + " is even.";
+          } else {
+            document.getElementById("result").textContent = number + " is odd.";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
